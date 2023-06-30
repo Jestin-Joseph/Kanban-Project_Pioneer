@@ -2,8 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+**#DEMO**
+
+![DEMO!](https://github.com/Jestin-Joseph/Kanban-Project_Pioneer/assets/114246217/797ebc53-0c94-4564-9f5d-cbe015520fd8)
+
 ## Available Scripts
-![DEMO!](https://github.com/Jestin-Joseph/Kanban-Project_Pioneer/assets/114246217/4587b480-dfc6-472d-a4e5-1736639a8142)
+
+
 
 In the project directory, you can run:
 
