@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.board{
+    margin-top: 1%;
+    margin-left: 1%;
+    margin: 10px;
+    min-height: 20vh;
+    width: 43vh;
+    padding-top: 10px;
+    background-color: #efeded;
+    padding-bottom: 20px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    
+}
+.add_btn{
+    height: 5vh;
+    width: 15vh;
+    margin: 10px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 50px;
+    border : 2px solid #396782;
+    background-color: transparent;
+    color: #396782;
+    font-weight: 700;
+    text-align: ;
+    
+}
+
+.add_btn:hover{
+    color:#ebebeb;
+    background-color: #396782;
+    opacity: 0.9;
+}
+.render{
+    margin-bottom: 50px;
+}
+.title{
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 20px;
+    text-decoration: underline;
+
+}
+.create_card{
+    background-color: #396782;
+    height: 50%;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    opacity: 0.8;
+    border-radius: 10px;
+
+}
+
+.card{
+   
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    min-height: 10vh;
+    min-width: 80%;
+    max-width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: move;
+    
+  }
+  
+.card:hover{
+    opacity: 0.6;
+  }
+  .dragging{
+    font-size: 16px;
+    min-height: 10vh;
+    min-width: 80%;
+    max-width: 80%;
+    margin: 10px auto;
+    padding-left: 10px;
+    background-color: #ebebeb;
+    border: none;
+    border-radius: 2px;
+    opacity: 0.7;
+    cursor: move;
+
+  }
+
+.submitButton{
+    border-radius: 50px;
+    border : 1px solid #ebebeb;
+    background-color: transparent;
+    color: #ebebeb;
+    width:40%;
+    margin: 10px auto;
+    height:40px
+}
+.submitButton:hover{
+    background-color: #ebebeb;
+    opacity: 0.8;
+    color: #396782
+}
+.cardEntry{
+    margin:10px;
+    min-height:80px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;;
+}
+
+textarea::-webkit-resizer {
+    background-color: white;
+    border-radius: 10px;
+  }

@@ -1,24 +1,50 @@
-import logo from './logo.svg';
 import './App.css';
+import Board from './components/board';
+import { useState } from 'react';
+import PlaylistAddCheckCircleIcon from '@mui/icons-material/PlaylistAddCheckCircle';
+
+
+
 
 function App() {
+  const [newBoard, setNewBoard]=useState(false)
+  const [count, setCount] = useState([])
+  
+  const addClick = ()=>{
+   
+    setNewBoard(true)
+    setCount(prev => [...prev, count])
+    
+  }
+  
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <header><div className='heading'>
+        <div id='logo'>
+          <PlaylistAddCheckCircleIcon sx={{fontSize: "50px", color:'#823967'}}/>
+        </div>
+        <div id='head'>
+             Pioneer!
+        </div>
+      </div></header>
+      
+      <div className='render'>
+      
+        {newBoard && 
+          count.map((_, index) => (
+            
+              <Board key={index}  id={index} />
+            
+          ))
+          }
+        <button className='add_board' value="Add" onClick={addClick} > Add Board</button>
+      </div>
+
+     
     </div>
+    
   );
 }
 
